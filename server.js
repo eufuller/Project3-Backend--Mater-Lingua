@@ -7,15 +7,14 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");  //responsible for setting this html header (inspect tools).
+//require controllers
+controller = require("./controllers/routeLinks")
 
 const {PORT = 3000, MONGODB_URL} = process.env
 
 
 //Connect to Mongoose
-mongoose.connect(MONGODB_URL, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-});
+mongoose.connect(MONGODB_URL);
 //Mongo Status Listeners
 mongoose.connection
 .on("connected", () => console.log("Connected to MongoDB"))
@@ -33,7 +32,8 @@ app.get("/", (req, res) => {
     res.send("Ello Mate")
 })
 
-//Index
+//controllers
+app.use("/language", controller)
 
 
 //Create

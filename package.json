@@ -1,5 +1,5 @@
 {
-  "name": "project-3-application",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,17 +8,9 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eufuller/Project-3-Application.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eufuller/Project-3-Application/issues"
-  },
-  "homepage": "https://github.com/eufuller/Project-3-Application#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",

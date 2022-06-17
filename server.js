@@ -7,15 +7,16 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");  //responsible for setting this html header (inspect tools).
+//require frenchControllers
+frenchController = require("./controllers/frenchRouteLinks")
+spanishController = require("./controllers/spanishRouteLinks")
+italianController = require("./controllers/italianRouteLinks")
 
-const {PORT = 3000, MONGODB_URL} = process.env
+const {PORT = 4000, MONGODB_URL} = process.env
 
 
 //Connect to Mongoose
-mongoose.connect(MONGODB_URL, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-});
+mongoose.connect(MONGODB_URL);
 //Mongo Status Listeners
 mongoose.connection
 .on("connected", () => console.log("Connected to MongoDB"))
@@ -33,10 +34,11 @@ app.get("/", (req, res) => {
     res.send("Ello Mate")
 })
 
-//Index
+//Controllers
+app.use("/french", frenchController)
+app.use("/spanish", spanishController)
+app.use("/italian", italianController)
 
-
-//Create
 
 
 //event listeners

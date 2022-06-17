@@ -7,10 +7,14 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");  //responsible for setting this html header (inspect tools).
-//require controllers
-controller = require("./controllers/routeLinks")
 
-const {PORT = 3000, MONGODB_URL} = process.env
+//require frenchControllers
+frenchController = require("./controllers/frenchRouteLinks")
+spanishController = require("./controllers/spanishRouteLinks")
+italianController = require("./controllers/italianRouteLinks")
+
+
+const {PORT = 4000, MONGODB_URL} = process.env
 
 
 //Connect to Mongoose
@@ -32,11 +36,13 @@ app.get("/", (req, res) => {
     res.send("Ello Mate")
 })
 
-//controllers
-app.use("/language", controller)
+
+//Controllers
+app.use("/french", frenchController)
+app.use("/spanish", spanishController)
+app.use("/italian", italianController)
 
 
-//Create
 
 
 //event listeners

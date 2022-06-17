@@ -34,13 +34,11 @@ app.get("/", (req, res) => {
     res.send("Ello Mate")
 })
 
-//frenchControllers
+//Controllers
 app.use("/french", frenchController)
 app.use("/spanish", spanishController)
 app.use("/italian", italianController)
 
-
-//Create
 
 
 //event listeners

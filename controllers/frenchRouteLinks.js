@@ -1,5 +1,5 @@
 const express = require("express")
-const FrenchFrenchFlashcards = require("../model/frenchFrenchFlashcards")
+const FrenchFlashcards = require("../model/frenchFlashcard")
 
 const router = express.Router()
 

@@ -1,16 +1,35 @@
 {
+<<<<<<< HEAD
+  "name": "project-3-application",
+=======
   "name": "backend",
+>>>>>>> 08e7eaa2fb9860dc052967dc367e2b31298da0fb
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eufuller/Project-3-Application.git"
+=======
     "start": "node server.js",
     "dev": "nodemon server.js"
+>>>>>>> 08e7eaa2fb9860dc052967dc367e2b31298da0fb
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
+  "bugs": {
+    "url": "https://github.com/eufuller/Project-3-Application/issues"
+  },
+  "homepage": "https://github.com/eufuller/Project-3-Application#readme",
+=======
+>>>>>>> 08e7eaa2fb9860dc052967dc367e2b31298da0fb
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",

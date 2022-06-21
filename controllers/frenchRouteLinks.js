@@ -1,14 +1,14 @@
 const express = require("express")
-const FrenchFlashcards = require("../model/frenchFlashcard")
+const FrenchFlashcard = require("../model/frenchFlashcard")
 
 const router = express.Router()
 
 
 //Index Route for a language
 router.get("/", async(req, res) => { //front end, replace "/language with /${languageName}"
-    //res.send("FrenchFlashcardss live here")
+    //res.send("FrenchFlashcards live here")
     try{
-        const language = await FrenchFlashcards.find({});
+        const language = await FrenchFlashcard.find({});
         res.json(language) //just sends the json data
     } catch(error) {
         console.log("error: ", error)
@@ -16,10 +16,10 @@ router.get("/", async(req, res) => { //front end, replace "/language with /${lan
     }
 });
 
-//CREATE Route for a language FrenchFlashcards (frontend will need to replace address with ${languageName})
+//CREATE Route for a language FrenchFlashcard (frontend will need to replace address with ${languageName})
 router.post("/", async(req, res) => { //error handling
 try{
-    const newCard = await FrenchFlashcards.create(req.body);
+    const newCard = await FrenchFlashcard.create(req.body);
         res.json(newCard)
 } catch(error) {
     console.log("error: ", error)

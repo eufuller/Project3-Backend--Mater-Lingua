@@ -4,7 +4,7 @@ Deployed site: https://materlingua.netlify.app/
 Frontend repository: https://github.com/mmarvin3/Project-3-Application-Frontend
 
 
-#### A flashcard creator for people to practice foreign language vocabulary. 
+#### A flashcard creator for users to practice foreign language vocabulary. 
 
 <img src="https://i.imgur.com/e4HO4cN.png" alt="Home Page Welcome Screen"/>
 

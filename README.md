@@ -1,7 +1,7 @@
 # Mater Lingua 1.0
 
-Deployed site: https://materlingua.netlify.app/
-Frontend repository: https://github.com/mmarvin3/Project-3-Application-Frontend
+* Deployed site: https://materlingua.netlify.app/
+* Frontend repository: https://github.com/mmarvin3/Project-3-Application-Frontend
 
 
 #### A flashcard creator for users to practice foreign language vocabulary. 
